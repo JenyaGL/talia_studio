@@ -39,6 +39,7 @@
     <div class="flex gap-8">
       <a href="#about" class="hover:text-brand-700 transition">אודות</a>
       <a href="#tracks" class="hover:text-brand-700 transition">מסלולים</a>
+      <a href="#gallery" class="hover:text-brand-700 transition">גלריה</a>
       <a href="#contact" class="hover:text-brand-700 transition">צור קשר</a>
     </div>
     <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-brand-700 font-bold border border-brand-100 text-lg">
@@ -73,12 +74,12 @@
     <!-- Hero Visuals (Left in RTL) -->
     <div class="w-full md:w-1/2 relative h-[500px]">
       <!-- Main Image -->
-      <img src="smaller.jpg" 
+      <img src="3.jpeg" 
            alt="Pole Fitness" 
            class="absolute top-0 left-10 w-3/4 h-[400px] object-cover rounded-3xl rounded-tr-[80px] shadow-2xl border-4 border-white z-10" />
       
       <!-- Overlapping Accent Image -->
-      <img src="main.jpg" 
+      <img src="2.jpeg" 
            alt="Studio Detail" 
            class="absolute bottom-0 right-10 w-1/2 h-[250px] object-cover rounded-3xl rounded-bl-[60px] shadow-xl border-4 border-white z-20" />
            
@@ -108,7 +109,7 @@
       <!-- Image (Offset styling) -->
       <div class="w-full md:w-1/2 relative">
         <div class="absolute inset-0 bg-brand-200 rounded-3xl transform translate-x-6 translate-y-6 -z-10"></div>
-        <img src="logo.jpg" 
+        <img src="1.jpeg" 
              alt="Stretching" 
              class="w-full h-[350px] object-cover rounded-3xl shadow-lg" />
       </div>
@@ -153,57 +154,188 @@
     </div>
   </section>
 
-  <!-- Modern Overlapping Contact Section -->
-  <section id="contact" class="py-24 relative bg-slate-50">
+  <!-- Pricing Section -->
+  <section id="tracks" class="py-24 bg-slate-50 border-t border-slate-100 relative">
     <div class="max-w-6xl mx-auto px-6">
       
       <div class="text-center mb-16 space-y-4">
+        <h2 class="text-4xl font-bold text-slate-800">מחירון ומסלולים</h2>
+        <p class="text-lg text-slate-500">בחרי את המסלול שמתאים לך. אפשר להתחיל באימון ניסיון או להצטרף למנוי קבוע.</p>
+      </div>
+
+      <!-- Pricing Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Category 1 -->
+        <div class="bg-white rounded-3xl p-8 shadow-lg border-t-4 border-brand-600">
+          <h3 class="text-xl font-bold text-brand-800 mb-6 border-b border-brand-100 pb-4">טכניקת עמוד / ריקוד על עמוד</h3>
+          <ul class="space-y-4 text-slate-700">
+            <li class="flex justify-between items-center"><span class="font-medium">אימון בודד</span><span class="font-bold text-brand-700">85 ₪</span></li>
+            <li class="flex justify-between items-center text-sm"><span class="text-slate-500">כרטיסיה 4 אימונים (חודשיים)</span><span class="font-bold">340 ₪</span></li>
+            <li class="flex justify-between items-center text-sm"><span class="text-slate-500">כרטיסיה 8 אימונים (3 חודשים)</span><span class="font-bold">680 ₪</span></li>
+            <li class="flex justify-between items-center text-sm"><span class="text-slate-500">כרטיסיה 10 אימונים (4 חודשים)</span><span class="font-bold">850 ₪</span></li>
+            <li class="flex justify-between items-center pt-2 border-t border-slate-100"><span class="font-medium">מנוי חודשי פעם בשבוע</span><span class="font-bold text-brand-700">320 ₪</span></li>
+            <li class="flex justify-between items-center"><span class="font-medium">מנוי חודשי פעמיים בשבוע</span><span class="font-bold text-brand-700">600 ₪</span></li>
+          </ul>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="bg-white rounded-3xl p-8 shadow-lg border-t-4 border-brand-400">
+          <h3 class="text-xl font-bold text-brand-800 mb-6 border-b border-brand-100 pb-4">פילאטיס / יוגה / אימון משולב</h3>
+          <ul class="space-y-4 text-slate-700">
+            <li class="flex justify-between items-center"><span class="font-medium">אימון בודד</span><span class="font-bold text-brand-700">60 ₪</span></li>
+            <li class="flex justify-between items-center text-sm"><span class="text-slate-500">כרטיסיה 4 אימונים (חודש)</span><span class="font-bold">240 ₪</span></li>
+            <li class="flex justify-between items-center text-sm"><span class="text-slate-500">כרטיסיה 8 אימונים (חודשיים)</span><span class="font-bold">460 ₪</span></li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-brand-800 mt-8 mb-6 border-b border-brand-100 pb-4">חוג עמוד ילדים</h3>
+          <ul class="space-y-4 text-slate-700">
+            <li class="flex justify-between items-center text-sm"><span class="text-slate-500">פעם בשבוע</span><span></span></li>
+            <li class="flex justify-between items-center"><span class="font-medium">מנוי חודשי</span><span class="font-bold text-brand-700">300 ₪ / 220 ₪</span></li>
+          </ul>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="bg-white rounded-3xl p-8 shadow-lg border-t-4 border-slate-800">
+          <h3 class="text-xl font-bold text-slate-800 mb-6 border-b border-slate-100 pb-4">אימונים אישיים וזוגיים</h3>
+          <ul class="space-y-4 text-slate-700">
+            <li class="flex justify-between items-center"><span class="font-medium">אימון אישי</span><span class="font-bold text-slate-800">200 ₪</span></li>
+            <li class="flex justify-between items-center text-sm"><span class="text-slate-500">10 אימונים אישיים (6 חודשים)</span><span class="font-bold">1800 ₪</span></li>
+            <li class="flex justify-between items-center pt-2 border-t border-slate-100"><span class="font-medium">אימון זוגי</span><span class="font-bold text-slate-800">350 ₪</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footnotes / Info Box -->
+      <div class="mt-12 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 text-sm text-slate-600 max-w-4xl mx-auto space-y-3">
+        <p><span class="text-brand-600 font-bold ml-1">*</span>כחלק מהרשמה לסטודיו קיים תשלום ביטוח שנתי בסך 100 ₪ (התשלום הוא חד שנתי התקף לשנה).</p>
+        <p><span class="text-brand-600 font-bold ml-1">*</span><span class="font-bold">משך אימוני טכניקת עמוד הינו שעה וחצי:</span> חצי שעה חימום וגמישות + שעה עבודה עם העמוד.</p>
+        <p><span class="text-brand-600 font-bold ml-1">*</span><span class="font-bold">משך אימוני ריקוד על עמוד הינו שעה ורבע:</span> 20 דקות חימום וגמישות + 55 דקות למידת כוריאוגרפיה.</p>
+        <p><span class="text-brand-600 font-bold ml-1">*</span><span class="font-bold">משך אימוני פילאטיס/ יוגה/ אימון משולב:</span> הינו שעה.</p>
+        <p><span class="text-brand-600 font-bold ml-1">*</span><span class="font-bold">משך אימון עמוד ילדים:</span> הינו שעה, פעמיים בשבוע.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Centered Contact Section -->
+  <section id="contact" class="py-24 relative bg-white border-t border-slate-100">
+    <div class="max-w-3xl mx-auto px-6">
+      
+      <div class="text-center mb-10 space-y-4">
         <h2 class="text-4xl font-bold text-slate-800">שיעור ראשון מתחיל בהודעה אחת.</h2>
         <p class="text-lg text-slate-500">אפשר לשלוח וואטסאפ, להתקשר או להגיע אלינו לסטודיו</p>
       </div>
 
-      <!-- Overlapping Grid Layout -->
-      <div class="relative w-full flex flex-col md:block">
+      <!-- Centered Contact Card -->
+      <div class="bg-slate-50/50 p-8 sm:p-12 rounded-3xl shadow-lg border border-slate-100 mx-auto">
+        <h3 class="text-2xl font-bold text-slate-800 mb-2 text-center">צור קשר</h3>
+        <p class="text-slate-500 mb-8 text-center">
+          מתלבטת איזה מסלול מתאים לך? שלחי הודעה ונעזור לך למצוא את המקום המושלם עבורך.
+        </p>
 
-
-        <!-- Floating Contact Card -->
-        <div class="w-full md:w-5/12 bg-white/90 backdrop-blur-xl p-8 sm:p-10 rounded-3xl shadow-2xl border border-white relative z-10 mt-[-50px] md:mt-12 md:mr-12 mx-auto md:mx-0">
-          <h3 class="text-2xl font-bold text-slate-800 mb-2">צור קשר</h3>
-          <p class="text-slate-500 mb-8">
-            מתלבטת איזה מסלול מתאים לך? שלחי הודעה ונעזור לך למצוא את המקום המושלם עבורך.
-          </p>
-
-          <div class="space-y-4 text-slate-700 font-medium mb-8">
-            <div class="flex items-center gap-4 bg-brand-50 p-4 rounded-2xl border border-brand-100">
-              <div class="w-10 h-10 rounded-full bg-brand-200 flex items-center justify-center text-brand-700">📞</div>
-              <div>
-                <div class="text-xs text-brand-700 font-bold">טלפון</div>
-                <div class="text-lg" dir="ltr">054-438-0175</div>
-              </div>
-            </div>
-            <div class="flex items-center gap-4 bg-brand-50 p-4 rounded-2xl border border-brand-100">
-              <div class="w-10 h-10 rounded-full bg-brand-200 flex items-center justify-center text-brand-700">📍</div>
-              <div>
-                <div class="text-xs text-brand-700 font-bold">כתובת</div>
-                <div>כרמיאל </div>
-              </div>
+        <div class="space-y-4 text-slate-700 font-medium mb-10 max-w-sm mx-auto">
+          <div class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-brand-100 shadow-sm">
+            <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-700">📞</div>
+            <div>
+              <div class="text-xs text-brand-700 font-bold">טלפון</div>
+              <div class="text-lg" dir="ltr">054-438-0175</div>
             </div>
           </div>
-
-          <a href="https://wa.me/972524380175" target="_blank"
-             class="block w-full bg-slate-800 hover:bg-black text-white text-center py-4 rounded-xl font-bold transition shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-            דברי איתנו בוואטסאפ
-          </a>
+          <div class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-brand-100 shadow-sm">
+            <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-700">📍</div>
+            <div>
+              <div class="text-xs text-brand-700 font-bold">כתובת</div>
+              <div>כרמיאל </div>
+            </div>
+          </div>
         </div>
+
+        <a href="https://wa.me/972524380175" target="_blank"
+           class="block w-full max-w-sm mx-auto bg-slate-800 hover:bg-black text-white text-center py-4 rounded-xl font-bold transition shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+          דברי איתנו בוואטסאפ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-24 bg-slate-50 border-t border-slate-100">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center mb-16 space-y-4">
+        <h2 class="text-4xl font-bold text-slate-800">רגעים מהבמה</h2>
+        <p class="text-lg text-slate-500">תמונות מתחרויות, הופעות ואירועים של הסטודיו</p>
+      </div>
+
+      <!-- CSS Grid for Images -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
         
-        <!-- Desktop spacing spacer -->
-        <div class="hidden md:block h-[550px]"></div>
+        <!-- Image 1 -->
+        <div class="overflow-hidden rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+          <!-- Replace this link with your own image, e.g., src="gallery1.jpg" -->
+          <img src="pic1.jpeg" 
+               alt="תמונה מתחרות" 
+               class="w-full h-48 sm:h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+
+        <!-- Image 2 -->
+        <div class="overflow-hidden rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+          <img src="pic2.jpeg"  
+               alt="תמונה מהופעה" 
+               class="w-full h-48 sm:h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+
+        <!-- Image 3 -->
+        <div class="overflow-hidden rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+          <img src="pic3.jpeg" 
+               alt="תמונה מתחרות" 
+               class="w-full h-48 sm:h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+
+        <!-- Image 4 -->
+        <div class="overflow-hidden rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+          <img src="pic4.jpeg" 
+               alt="תמונה מהופעה" 
+               class="w-full h-48 sm:h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+
+        <!-- Image 1 -->
+        <div class="overflow-hidden rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+          <!-- Replace this link with your own image, e.g., src="gallery1.jpg" -->
+          <img src="pic5.jpeg" 
+               alt="תמונה מתחרות" 
+               class="w-full h-48 sm:h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+
+        <!-- Image 2 -->
+        <div class="overflow-hidden rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+          <img src="pic6.jpeg"  
+               alt="תמונה מהופעה" 
+               class="w-full h-48 sm:h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+
+        <!-- Image 3 -->
+        <div class="overflow-hidden rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+          <img src="pic7.jpeg" 
+               alt="תמונה מתחרות" 
+               class="w-full h-48 sm:h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+
+        <!-- Image 4 -->
+        <div class="overflow-hidden rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+          <img src="pic8.jpeg" 
+               alt="תמונה מהופעה" 
+               class="w-full h-48 sm:h-64 object-cover hover:scale-105 transition duration-500" />
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white py-12 text-center border-t border-slate-100 mt-12">
+  <footer class="bg-white py-12 text-center border-t border-slate-100">
     <p class="text-sm text-slate-400">© 2026 Talia Glomb Studio. כל הזכויות שמורות.</p>
   </footer>
 
